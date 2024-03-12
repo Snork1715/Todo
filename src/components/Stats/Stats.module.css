@@ -1,0 +1,18 @@
+h2 + .todo__info_list { margin-top: 1em; }
+
+.todo__info_list {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.todo__info_list > li {
+  display: inline-block;
+}
+
+.todo__info_list > li > span { font-weight: 700; }
+
+.todo__data {
+  padding: 1em;
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: .25em;
+}

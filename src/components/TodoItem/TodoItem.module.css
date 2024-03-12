@@ -1,0 +1,109 @@
+
+.todo__task {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, .25);
+  border-radius: .25em;
+}
+
+.todo__task + .todo__task {
+  margin-top: .5em;
+}
+
+.todo__task__checked {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.todo__task__checked .todo__delete {
+  opacity: .75;
+}
+
+.todo__delete {
+  border: 0;
+  outline: 0;
+  font-size: .75em;
+  padding: .45em;
+  border-radius: .25em;
+  font-weight: 700;
+  color: #e1e1e1;
+  background: #333;
+  cursor: pointer;
+  transition: 120ms all ease-in-out;
+}
+
+.todo__delete:hover {
+  background: #D64045;
+  transform: translateY(-0.120em);
+}
+
+.todo__delete:active {
+  opacity: .5;
+}
+
+.form_control {
+  width: 100%;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+/* 
+    CHECKBOX STYLES
+*/
+
+.form-control {
+  width: 100%;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #e1e1e1;
+  border-radius: 1.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #731DD8;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid silver;
+  outline-offset: max(2px, 0.15em);
+}
+
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+

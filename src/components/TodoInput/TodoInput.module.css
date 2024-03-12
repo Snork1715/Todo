@@ -1,0 +1,59 @@
+  .todo__add {
+    padding: 1em;
+    background-color: rgba(0,0,0,.1);
+    border-radius: .25em;
+  }
+
+  .todo__add + .todo__data {
+    margin-top: 2em;
+  }
+  
+  .todo__input {
+    width: 100%;
+    border: .15em solid transparent;
+    outline: 0;
+    padding: 1.25em;
+    font-size: 1.25em;
+    font-family: inherit;
+    background-color: rgba(255,255,255,.75);
+    border-radius: .25em;
+    transition: 120ms all ease-in-out;
+  }
+  
+  .todo__input:focus {
+    border-color: #94bbe9;
+    border-width: .15em;
+    box-shadow: inset 0 0 .7em #94bbe9;
+  }
+  
+  .todo__input + .todo__add__btn {
+    margin-top: 1em;
+  }
+  
+  .todo__add__btn {
+    width: 100%;
+    border: 1px solid transparent;
+    outline: 0;
+    font-size: 1em;
+    padding: 1.25em;
+    border-radius: .25em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #e1e1e1;
+    background: #342E37;
+    cursor: pointer;
+    transition: 120ms all ease-in-out;
+  }
+  
+  .todo__add__btn:hover {
+    color: #94bbe9;
+    transform: scale(1.025);
+  }
+  
+  .todo__add__btn:active {
+    opacity: .85;
+  }
+
+  .todo__add-btn:active {
+    opacity: .85;
+  } 

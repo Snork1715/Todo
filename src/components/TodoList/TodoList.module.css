@@ -1,0 +1,11 @@
+.todo__tasks {
+  list-style-type: none;
+}
+  .list_empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 18px;
+  color: #555;
+  }
